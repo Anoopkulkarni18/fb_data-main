@@ -45,40 +45,24 @@
         td {
             background-color: #fff;
         }
-        .proceed-btn {
-    position: fixed;
-    bottom: 55px;
-    right: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-}
 
-.proceed-btn:hover {
-    background-color: #218838;
-}
-.back-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #28a745; /* Green background color */
-    color: white; /* White text color */
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none; /* Remove underline from the link */
-}
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #28a745; /* Green background color */
+            color: white; /* White text color */
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; /* Remove underline from the link */
+        }
 
-.back-button:hover {
-    background-color: #218838; /* Darker green color on hover */
-}
+        .back-button:hover {
+            background-color: #218838; /* Darker green color on hover */
+        }
     </style>
 </head>
 <body>
@@ -94,15 +78,14 @@
         </table>
     </div>
     
-    
-    <!-- Button to redirect to next page -->
-<a href="createcustomer.html" class="back-button" style="position: fixed; bottom: 70px; left: 20px;">Back</a>
+    <!-- Button to redirect to previous page -->
+    <a href="createcustomer.html" class="back-button">Back</a>
+
     <script>
         // Function to retrieve URL parameters
         function getUrlParams() {
             const params = new URLSearchParams(window.location.search);
             return {
-                
                 email: params.get('email'),
                 demoStartDate: params.get('demoStartDate'),
                 demoEndDate: params.get('demoEndDate')
@@ -115,7 +98,6 @@
             const companyDetailsTable = document.getElementById('company-details');
             companyDetailsTable.innerHTML = `
                 <tr>
-                  
                     <td>${email}</td>
                     <td>${demoStartDate}</td>
                     <td>${demoEndDate}</td>

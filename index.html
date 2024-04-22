@@ -7,10 +7,9 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url("");
+            background-color: white;
             margin: 0;
             padding: 0;
-            background-color: white;
             color: #495057;
         }
 
@@ -21,6 +20,7 @@
             padding: 20px;
             font-size: 24px;
             transition: background-color 0.3s ease-in-out;
+            position: relative; /* Ensure logo position is relative to header */
         }
 
         nav {
@@ -62,15 +62,16 @@
 
         .column {
             width: 40%;
-            padding: 120px;
+            padding: 20px; /* Reduced padding */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 90px;
-            background-color: peachpuff; /* Replace with your preferred color */
+            margin-bottom: 30px; /* Reduced margin */
+            background-color: peachpuff;
+            transition: background-color 0.3s;
         }
 
         .column:last-child {
-            background-color:lightgoldenrodyellow; /* Replace with your preferred color */
+            background-color: lightgoldenrodyellow;
         }
 
         .form {
@@ -100,7 +101,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            text-decoration: none; /* Remove underlines for buttons */
+            text-decoration: none;
             display: inline-block;
         }
 
@@ -109,16 +110,15 @@
         }
 
         .logo-img {
-    max-width: 20%; /* Adjust the size as needed */
-    height: auto;
-    position: absolute; /* Position absolutely */
-    top: 10px; /* Distance from top */
-    left: 10px; /* Distance from left */
-}
-
+            max-width: 20%; /* Adjusted logo size */
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
 
         footer {
-            background-color:grey;
+            background-color: grey;
             color: white;
             text-align: center;
             padding: 10px;
@@ -126,39 +126,38 @@
             bottom: 0;
             width: 100%;
         }
+
         .column a {
-        text-decoration: none;
-    }
+            text-decoration: none;
+        }
 
-    .column button {
-        background-color:grey; /* Admin button color */
-        color: #fff;
-        padding:  20px;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 18px;
-        transition: background-color 0.3s;
-        display: block;
-        width: 100%;
-    }
+        .column button {
+            background-color: grey;
+            color: #fff;
+            padding: 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+            text-decoration: none;
+        }
 
-    .column:last-child button {
-        background-color:grey; /* User button color */
-    }
+        .column:last-child button {
+            background-color: grey;
+        }
 
-    .column button:hover {
-        background-color: lightblue; /* Darker shade for Admin button on hover */
-    }
-    .column a.btn-primary {
-    color: #fff; /* Change the text color of the "User Portal" button */
-}
+        .column button:hover {
+            background-color: lightblue;
+        }
 
-.column button {
-    color: #fff; /* Change the text color of the "Admin Portal" button */
-}
+        .column a.btn-primary {
+            color: grey;
 
-        
+        }
+
     </style>
 </head>
 <body>
@@ -166,7 +165,7 @@
         <img class="logo-img" src="emoticuplogo.png" alt="Company Logo">
     </header>
     <nav>
-        <!-- Remove admin and user portal links from here -->
+        <!-- You can add navigation links here if needed -->
     </nav>
     <section>
         <div class="welcome-text">
@@ -175,24 +174,22 @@
         <div class="columns-container">
             <div class="column">
                 <!-- Admin Portal Button -->
-                <a href="index\ap5.html.html">
+                <a href="index2.html">
                     <button>Admin Portal</button>
                 </a>
             </div>
 
             <div class="column">
                 <!-- User Portal Button -->
-           
-                    <button><a href="login.html" class="btn btn-primary">User Portal</a></button>
-                </a>
+                <a href="login.html" ><button>User Portal</button></a>
             </div>
         </div>
         <!-- Welcome message for Emoticup company -->
-        <p>Welcome to emoticup!, where innovation meets excellence. We take pride in delivering top-notch industry & services.</p>
+        <p>Welcome to Emoticup, where innovation meets excellence. We take pride in delivering top-notch industry & services.</p>
     </section>
    
     <footer>
-        &copy; Copyright 2017 emoticup. | All rights reserved.
+        &copy; Copyright 2017 Emoticup. | All rights reserved.
     </footer>
     
 </body>
